@@ -58,9 +58,9 @@ binary agentmux can consume with the same verdicts and timing.
   `akbash/*`, `issue/*`, `fix/*`, and similar branches). They are undeclared
   heads the reconcile script leaves untouched. Deleting them is a human
   decision; none is a `DELETEME/` marker.
-- The bound checkout `~/src/herdr` stays on `master` because herdr's own
-  managed worktrees hang off it. A local `integration` branch exists there
-  only so the namespace check can see it; it is never checked out.
+- The bound checkout `~/source/herdrdev--herdr` stays on `master`. A local
+  `integration` branch exists there only so the namespace check can see it;
+  it is never checked out.
 - Zig 0.16.0 is installed and herdr requires 0.15.2, so herdr's `just
   check` is not runnable here. The gate is crate-only by design.
 - Known input-contract gap for the consumer: herdr reads `rows` rows ending
