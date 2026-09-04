@@ -46,7 +46,7 @@ case "${1:-}" in
         ;;
 esac
 
-checkout="${HERDX_HERDR_CHECKOUT:-$HOME/src/herdr}"
+checkout="${HERDX_HERDR_CHECKOUT:-$HOME/source/herdrdev--herdr}"
 branch=integration
 fork_url="${HERDX_FORK_URL:-https://github.com/possibilities/herdr.git}"
 bin="${HERDX_BIN:-$HOME/.local/bin/agentstate}"

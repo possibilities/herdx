@@ -17,12 +17,13 @@ if [ ! -f "$script" ]; then
     exit 1
 fi
 
-export MAINTAIN_WORKSHOP="$(cd "$(dirname "$0")/.." && pwd)"
-export MAINTAIN_CHECKOUT="${HERDX_HERDR_CHECKOUT:-$HOME/src/herdr}"
+MAINTAIN_WORKSHOP="$(cd "$(dirname "$0")/.." && pwd)"
+export MAINTAIN_WORKSHOP
+export MAINTAIN_CHECKOUT="${HERDX_HERDR_CHECKOUT:-$HOME/source/herdrdev--herdr}"
 export MAINTAIN_FORK_REPO=possibilities/herdr
 export MAINTAIN_UPSTREAM_REPO=herdrdev/herdr
 export MAINTAIN_FORK_REMOTE=fork
-export MAINTAIN_UPSTREAM_REMOTE=origin
+export MAINTAIN_UPSTREAM_REMOTE=upstream
 export MAINTAIN_MAIN_BRANCH=master
 export MAINTAIN_INTEGRATION_BRANCH=integration
 export MAINTAIN_CARRY_PREFIX=''

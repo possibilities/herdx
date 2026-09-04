@@ -23,8 +23,8 @@ whose only carried feature is the `agentstate` crate. Read `CONTEXT.md`,
 - `scripts/reconcile-branches.sh` is the thin entrypoint to the skill's
   shared branch script and declares the branch model only.
 
-The checkout being maintained is `~/src/herdr`, `fork` pointing to
-`possibilities/herdr` and `origin` to `herdrdev/herdr`. It stays on `master`;
+The checkout being maintained is `~/source/herdrdev--herdr`, `fork` pointing
+to `possibilities/herdr` and `upstream` to `herdrdev/herdr`. It stays on `master`;
 it is shared with herdr's own managed worktrees on this machine. Build and
 test only in worktrees.
 

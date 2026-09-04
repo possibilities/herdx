@@ -20,9 +20,9 @@ herdr's detection source by path rather than carrying a copy.
 
 ## Upstream
 
-- Bound checkout: `~/src/herdr`. `origin` is `herdrdev/herdr`; `fork` is
+- Bound checkout: `~/source/herdrdev--herdr`. `upstream` is `herdrdev/herdr`; `fork` is
   `possibilities/herdr`. Upstream's default branch is `master`. Read
-  `~/src/herdr/CLAUDE.md` completely before touching herdr; it is the
+  `~/source/herdrdev--herdr/CLAUDE.md` completely before touching herdr; it is the
   upstream guidance file. The bound checkout is also the shared checkout
   behind this machine's herdr-managed worktrees under `~/.herdr/worktrees/`,
   so it stays on `master` and is never checked out to `integration`.
@@ -55,7 +55,7 @@ herdr's detection source by path rather than carrying a copy.
   the only ref the installer builds from and never a development branch of
   its own: work lands on it through a rebased candidate.
 - Composition: linear stack. `integration` is one linear series of commits
-  above `origin/master`, rebased as a whole onto current upstream in a
+  above `upstream/master`, rebased as a whole onto current upstream in a
   scratch worktree every cycle, with each commit's subject the marker the
   inventory below refers to. There are no carry branches. A feature is
   repaired by editing its commit in place during the rebase; a new feature
