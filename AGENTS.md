@@ -32,4 +32,4 @@ The crate compiles herdr source by path. Never copy a herdr file into the
 crate to work around a compile error; fix the shim or record the upstream
 change as a repair in the cycle.
 
-`CLAUDE.md` is a pointer to this file.
+`AGENTS.md` is the repository guidance file.
